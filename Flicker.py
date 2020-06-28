@@ -23,9 +23,9 @@ def get_flickr_data(tags_string):
     return flickr_resp.json()
 
 result_river_mts = get_flickr_data("river,mountains")
+#here the tag_strings are "river,mountains"
 
 photos = result_river_mts['photos']['photo']
-
 #To open images in webbrowser
 for photo in photos:
     owner = photo['owner']
